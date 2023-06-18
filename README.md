@@ -1,13 +1,5 @@
 # library_state_management
 
-## 完成的目标
-
-1. 这个库是针对Provider的封装，屏蔽了Provider的方法调用，便于以后更换其他的状态管理库。
-2. 此库提供了类似于原生视图(UIViewController 和Activity)的生命周期和App生命周期的监听，方便在不同生命周期阶段添加业务逻辑。
-3. Controller实现了对StatefulWidget生命周期的监听，实现了UI和业务逻辑的分离。
-4. 优化了同个组件监听多个事件更新的情况，
-5. 提供了EventBus的混入，可以在Controller中监听和发送事件
-
 ## 包含的类
 
 1. LifecycleMixin是针对ChangeNotifier的混入，添加了局部更新和生命周期的逻辑
